@@ -11,6 +11,7 @@
 body {
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
+  font-weight: 400;
 }
 
 .container {
@@ -27,5 +28,47 @@ body {
   padding: 20px;
   width: 375px;
   min-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.P-btn {
+  background: #5368df;
+  color: white;
+}
+
+.N-btn {
+  background: rgba(145, 148, 161, 0.2);
+  color: #252b46;
+}
+
+img {
+  width: 100%;
+}
+
+section.hero {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

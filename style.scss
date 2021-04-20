@@ -20,6 +20,7 @@ $font-weight-500:500;
 body {
   font-family: 'Rubik', sans-serif;
   font-size: $font-size;
+  font-weight: $font-weight-400;
 }
 
 .container {
@@ -30,4 +31,43 @@ body {
   padding: 20px;
   width: 375px;
   min-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: $font-weight-500;
+  display: inline-block;
+}
+
+.P-btn {
+  background: $P-Soft-Blue;
+  color: white;
+}
+
+.N-btn {
+  background: rgba($N-Grayish-Blue, 0.2);
+  color: $N-Very-Dark-Blue;
+}
+
+img {
+  width: 100%;
+}
+
+section.hero {
+  flex-direction: column;
+  text-align: center;
 }
