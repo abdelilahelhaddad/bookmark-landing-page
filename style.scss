@@ -77,7 +77,33 @@ img {
   width: 100%;
 }
 
-section.hero {
+#hero {
   flex-direction: column;
   text-align: center;
+
+  .illustration-hero {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  .illustration-hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 80%;
+    background: $P-Soft-Blue;
+    border-radius: 100vh 0 0 100vh;
+    margin: 15% -20px 0 0;
+    z-index: -999;
+  }
+
+  .hero-content {
+
+    .hero-buttons {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
 }
