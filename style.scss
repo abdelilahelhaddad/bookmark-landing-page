@@ -128,23 +128,23 @@ img {
     cursor: pointer;
     position: relative;
     margin: 1rem 0;
+    padding: 0 5rem 1rem 5rem;
     border-bottom: 1px solid rgba($N-Grayish-Blue, 0.2);
   }
 
   .tab::after {
     content: "";
-    position: static;
+    position: absolute;
     left: 0;
     right: 0;
-    top: 100%;
-    margin: 1rem auto;
-    width: 100%;
+    top: 92%;
+    margin: 0 auto;
+    width: 50%;
     height: 4px;
-    background: rgba($N-Grayish-Blue, 0.2);
   }
 
   .tab.active::after {
-    background-color: $P-Soft-Red;
+    background: $P-Soft-Red;
   }
 
 }
