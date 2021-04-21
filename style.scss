@@ -110,6 +110,41 @@ img {
 
 #features {
   text-align: center;
+  flex-direction: column;
 
+  [data-tab-content] {
+    display: none;
+  }
+
+  .active[data-tab-content] {
+    display: block;
+  }
+
+  .tabs {
+    list-style-type: none;
+  }
+
+  .tab {
+    cursor: pointer;
+    position: relative;
+    margin: 1rem 0;
+    border-bottom: 1px solid rgba($N-Grayish-Blue, 0.2);
+  }
+
+  .tab::after {
+    content: "";
+    position: static;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin: 1rem auto;
+    width: 100%;
+    height: 4px;
+    background: rgba($N-Grayish-Blue, 0.2);
+  }
+
+  .tab.active::after {
+    background-color: $P-Soft-Red;
+  }
 
 }

@@ -112,5 +112,44 @@ img {
 
 #features {
   text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#features [data-tab-content] {
+  display: none;
+}
+
+#features .active[data-tab-content] {
+  display: block;
+}
+
+#features .tabs {
+  list-style-type: none;
+}
+
+#features .tab {
+  cursor: pointer;
+  position: relative;
+  margin: 1rem 0;
+  border-bottom: 1px solid rgba(145, 148, 161, 0.2);
+}
+
+#features .tab::after {
+  content: "";
+  position: static;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin: 1rem auto;
+  width: 100%;
+  height: 4px;
+  background: rgba(145, 148, 161, 0.2);
+}
+
+#features .tab.active::after {
+  background-color: #fa5757;
 }
 /*# sourceMappingURL=style.css.map */
