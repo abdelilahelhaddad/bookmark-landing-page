@@ -182,9 +182,15 @@ img {
       }
 
       h1 {
-        margin-top: 3rem;
+        margin-top: 4rem;
       }
     }
   }
 
+}
+
+#extension {
+  text-align: center;
+  flex-direction: column;
+  margin-top: 3rem;
 }
