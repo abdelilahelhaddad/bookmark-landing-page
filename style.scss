@@ -189,8 +189,35 @@ img {
 
 }
 
-#extension {
+#extensions {
   text-align: center;
   flex-direction: column;
   margin-top: 3rem;
+
+  .extension {
+    width: 85%;
+    padding: 4rem 0 1.5rem 0;
+    margin: 2.5rem 0 1.5rem 0;
+    box-shadow: 0px 7px 18px -10px rgba(0, 0, 0, 0.5);
+    // box-shadow: 0px 8px 18px -10px rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+    .chrome {
+      width: 40%;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      color: $N-Very-Dark-Blue;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      padding: 1rem 2rem;
+      font-size: 14px;
+    }
+  }
 }
