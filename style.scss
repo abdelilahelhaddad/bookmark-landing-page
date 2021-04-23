@@ -197,12 +197,14 @@ img {
   .extension {
     width: 85%;
     padding: 4rem 0 1.5rem 0;
-    margin: 2.5rem 0 1.5rem 0;
+    margin-top: 2.5rem;
     box-shadow: 0px 7px 18px -10px rgba(0, 0, 0, 0.5);
     // box-shadow: 0px 8px 18px -10px rgb(0, 0, 0, 0.5);
     border-radius: 10px;
 
-    .chrome {
+    .chrome,
+    .firefox,
+    .opera {
       width: 40%;
       margin-bottom: 1rem;
     }
