@@ -57,6 +57,10 @@ p {
   font-size: $font-size-p;
 }
 
+ul {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -130,7 +134,6 @@ img {
   }
 
   .tabs {
-    list-style-type: none;
     margin-bottom: 2rem;
   }
 
@@ -220,6 +223,42 @@ img {
     a {
       padding: 1rem 2rem;
       font-size: 14px;
+    }
+  }
+}
+
+#faq {
+  text-align: center;
+  flex-direction: column;
+  margin-top: 3rem;
+
+  .faq-accordions {
+    margin-top: 3rem;
+
+    .accordion {
+      border-bottom: 1px solid rgba($N-Grayish-Blue, 0.3);
+
+      .accordion-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          color: $N-Very-Dark-Blue;
+        }
+
+        svg {
+          margin-top: 1rem;
+          // path {
+          //   stroke: $P-Soft-Red;
+          // }
+        }
+      }
+
+      p {
+        text-align: left;
+        margin-top: 2rem;
+      }
     }
   }
 }
