@@ -271,22 +271,22 @@ img {
   margin-top: 1rem;
 }
 
-#faq .faq-accordions .accordion .accordion-head svg.active {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-#faq .faq-accordions .accordion .accordion-head svg.active path {
-  stroke: #fa5757;
-}
-
 #faq .faq-accordions .accordion .accordion-body {
   margin-top: 1rem;
   text-align: left;
   display: none;
 }
 
-#faq .faq-accordions .accordion .accordion-body.active {
+#faq .faq-accordions .accordion.active .accordion-head svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#faq .faq-accordions .accordion.active .accordion-head svg path {
+  stroke: #fa5757;
+}
+
+#faq .faq-accordions .accordion.active .accordion-body {
   display: block;
   padding-bottom: 2rem;
 }

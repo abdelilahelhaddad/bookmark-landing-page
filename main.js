@@ -16,13 +16,10 @@ tabs.forEach(tab => {
 })
 
 
-const accordion = document.querySelectorAll(".accordion");
-const svg = document.querySelector("svg");
-const accordionBody = document.querySelector(".accordion-body");
+const accordion = document.getElementsByClassName("accordion");
 
 for (i = 0; i < accordion.length; i++) {
   accordion[i].addEventListener('click', function () {
-    svg.classList.toggle('active');
-    accordionBody.classList.toggle('active');
+    this.classList.toggle('active');
   })
 }

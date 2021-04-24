@@ -255,13 +255,6 @@ img {
           margin-top: 1rem;
         }
 
-        svg.active {
-          transform: rotate(180deg);
-
-          path {
-            stroke: $P-Soft-Red;
-          }
-        }
       }
 
       .accordion-body {
@@ -270,10 +263,23 @@ img {
         display: none;
       }
 
-      .accordion-body.active {
-        display: block;
-        padding-bottom: 2rem;
+      &.active {
+        .accordion-head {
+          svg {
+            transform: rotate(180deg);
+
+            path {
+              stroke: $P-Soft-Red;
+            }
+          }
+        }
+
+        .accordion-body {
+          display: block;
+          padding-bottom: 2rem;
+        }
       }
     }
+
   }
 }
