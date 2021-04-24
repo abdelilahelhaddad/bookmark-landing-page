@@ -260,6 +260,7 @@ img {
   text-align: left;
   cursor: pointer;
   width: 335px;
+  padding-bottom: 1rem;
 }
 
 #faq .faq-accordions .accordion .accordion-head .accordion-title {
@@ -270,8 +271,23 @@ img {
   margin-top: 1rem;
 }
 
+#faq .faq-accordions .accordion .accordion-head svg.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#faq .faq-accordions .accordion .accordion-head svg.active path {
+  stroke: #fa5757;
+}
+
 #faq .faq-accordions .accordion .accordion-body {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  text-align: left;
   display: none;
+}
+
+#faq .faq-accordions .accordion .accordion-body.active {
+  display: block;
+  padding-bottom: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

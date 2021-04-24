@@ -245,6 +245,7 @@ img {
         text-align: left;
         cursor: pointer;
         width: 335px;
+        padding-bottom: 1rem;
 
         .accordion-title {
           color: $N-Very-Dark-Blue;
@@ -252,15 +253,26 @@ img {
 
         svg {
           margin-top: 1rem;
-          // path {
-          //   stroke: $P-Soft-Red;
-          // }
+        }
+
+        svg.active {
+          transform: rotate(180deg);
+
+          path {
+            stroke: $P-Soft-Red;
+          }
         }
       }
 
       .accordion-body {
-        margin-top: 2rem;
+        margin-top: 1rem;
+        text-align: left;
         display: none;
+      }
+
+      .accordion-body.active {
+        display: block;
+        padding-bottom: 2rem;
       }
     }
   }
