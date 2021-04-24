@@ -290,4 +290,8 @@ img {
   display: block;
   padding-bottom: 2rem;
 }
+
+#faq a {
+  margin: 2.5rem 0;
+}
 /*# sourceMappingURL=style.css.map */
