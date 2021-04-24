@@ -84,6 +84,11 @@ a {
   color: $N-Very-Dark-Blue;
 }
 
+.R-btn {
+  background: $P-Soft-Red;
+  color: white;
+}
+
 img {
   width: 100%;
 }
@@ -285,5 +290,50 @@ img {
 
   a {
     margin: 2.5rem 0;
+  }
+}
+
+#cpa {
+  text-align: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  background: $P-Soft-Blue;
+  padding: 2rem 20px;
+
+  p {
+    color: white;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+  }
+
+  h2 {
+    color: white;
+    font-weight: $font-weight-500;
+    font-size: 26px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2rem;
+
+    input {
+      padding: 1rem;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+        color: rgba($N-Grayish-Blue, 0.5);
+        font-size: $font-size-p;
+      }
+    }
+
+    a {
+      font-size: $font-size-p;
+    }
   }
 }
