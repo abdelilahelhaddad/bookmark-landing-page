@@ -242,8 +242,11 @@ img {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        text-align: left;
+        cursor: pointer;
+        width: 335px;
 
-        p {
+        .accordion-title {
           color: $N-Very-Dark-Blue;
         }
 
@@ -255,9 +258,9 @@ img {
         }
       }
 
-      p {
-        text-align: left;
+      .accordion-body {
         margin-top: 2rem;
+        display: none;
       }
     }
   }

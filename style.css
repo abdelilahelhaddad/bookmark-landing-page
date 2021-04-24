@@ -257,9 +257,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: left;
+  cursor: pointer;
+  width: 335px;
 }
 
-#faq .faq-accordions .accordion .accordion-head p {
+#faq .faq-accordions .accordion .accordion-head .accordion-title {
   color: #252b46;
 }
 
@@ -267,8 +270,8 @@ img {
   margin-top: 1rem;
 }
 
-#faq .faq-accordions .accordion p {
-  text-align: left;
+#faq .faq-accordions .accordion .accordion-body {
   margin-top: 2rem;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
