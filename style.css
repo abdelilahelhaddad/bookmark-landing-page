@@ -406,6 +406,10 @@ footer .logo-nav .logo {
   margin-top: 2rem;
 }
 
+footer .logo-nav .logo svg path {
+  fill: #FFF;
+}
+
 footer .logo-nav .nav {
   margin-top: 2rem;
 }
@@ -435,6 +439,117 @@ footer .socials {
 }
 
 footer .socials img:first-child {
+  margin-right: 2.5rem;
+}
+
+.ham-nav-container {
+  position: fixed;
+  background-color: rgba(37, 43, 70, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.ham-nav-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.logo_close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  padding: 20px 0 40px 0;
+}
+
+.logo_close .logo path {
+  fill: #FFF;
+}
+
+.logo_close .logo circle {
+  fill: #FFF;
+}
+
+.logo_close .logo .mid-icon-shape {
+  fill: #242A45;
+}
+
+.logo_close #close_nav {
+  width: 15px;
+}
+
+.ham-nav-modalo {
+  background-color: transparent;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  width: 450px;
+  max-width: 85%;
+}
+
+.ham-nav-modalo ul li {
+  padding: 22px 35px;
+  border-top: 1px solid rgba(145, 148, 161, 0.4);
+  text-align: center;
+}
+
+.ham-nav-modalo ul li a {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.ham-nav-modalo ul li:nth-child(3) {
+  border-bottom: 1px solid rgba(145, 148, 161, 0.4);
+}
+
+.ham-nav-modalo ul li:last-child {
+  margin-top: 22px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: 2px solid #FFF;
+  color: #FFF;
+}
+
+.socials-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8rem;
+}
+
+.socials-nav img:first-child {
   margin-right: 2.5rem;
 }
 /*# sourceMappingURL=style.css.map */
