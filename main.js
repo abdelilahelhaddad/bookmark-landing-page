@@ -35,6 +35,7 @@ function validation() {
     inputError.classList.add("error");
     errorText.classList.add("errorText");
   } else {
-
+    inputError.classList.remove("error");
+    errorText.classList.remove("errorText");
   }
 }
