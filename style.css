@@ -335,6 +335,7 @@ img {
           flex-direction: column;
   width: 100%;
   margin: 2rem;
+  position: relative;
 }
 
 #cpa form input {
@@ -362,6 +363,29 @@ img {
 #cpa form input::placeholder {
   color: rgba(145, 148, 161, 0.5);
   font-size: 16px;
+}
+
+#cpa form input.error {
+  border: 3px solid #fa5757;
+  border-bottom: 30px solid #fa5757;
+  position: relative;
+  top: 0;
+  right: 0;
+  background: #fff url("./images/icon-error.svg") no-repeat;
+  background-position: 95% center;
+}
+
+#cpa form span {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  color: white;
+  font-size: 12px;
+}
+
+#cpa form span.error {
+  display: block;
 }
 
 #cpa form a {

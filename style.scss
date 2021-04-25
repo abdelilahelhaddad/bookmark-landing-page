@@ -319,6 +319,7 @@ img {
     flex-direction: column;
     width: 100%;
     margin: 2rem;
+    position: relative;
 
     input {
       padding: 1rem;
@@ -330,6 +331,29 @@ img {
         color: rgba($N-Grayish-Blue, 0.5);
         font-size: $font-size-p;
       }
+    }
+
+    input.error {
+      border: 3px solid $P-Soft-Red;
+      border-bottom: 30px solid $P-Soft-Red;
+      position: relative;
+      top: 0;
+      right: 0;
+      background: #fff url("./images/icon-error.svg") no-repeat;
+      background-position: 95% center;
+    }
+
+    span {
+      display: none;
+      position: absolute;
+      top: 40%;
+      left: 5%;
+      color: white;
+      font-size: 12px;
+    }
+
+    span.error {
+      display: block;
     }
 
     a {
