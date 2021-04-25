@@ -377,15 +377,15 @@ img {
 
 #cpa form span {
   display: none;
+}
+
+#cpa form span.errorText {
+  display: block;
   position: absolute;
   top: 40%;
   left: 5%;
   color: white;
   font-size: 12px;
-}
-
-#cpa form span.error {
-  display: block;
 }
 
 #cpa form a {

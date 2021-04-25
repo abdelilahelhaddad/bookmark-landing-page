@@ -23,3 +23,18 @@ for (i = 0; i < accordion.length; i++) {
     this.classList.toggle('active');
   })
 }
+
+function validation() {
+  const text = document.getElementById("email").value;
+  const inputError = document.querySelector("#email");
+  const errorText = document.querySelector("#errorText");
+
+  var regx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  if (!regx.test(text)) {
+    inputError.classList.add("error");
+    errorText.classList.add("errorText");
+  } else {
+
+  }
+}

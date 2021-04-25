@@ -345,15 +345,15 @@ img {
 
     span {
       display: none;
+    }
+
+    span.errorText {
+      display: block;
       position: absolute;
       top: 40%;
       left: 5%;
       color: white;
       font-size: 12px;
-    }
-
-    span.error {
-      display: block;
     }
 
     a {
