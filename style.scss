@@ -26,6 +26,7 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
@@ -93,8 +94,15 @@ img {
   width: 100%;
 }
 
+#navbar {
+  flex-direction: row;
+
+  @media screen and (min-width:768px) {
+    padding: 1rem 10%;
+  }
+}
+
 #hero {
-  flex-direction: column;
   text-align: center;
   margin-top: 2rem;
 
@@ -127,7 +135,6 @@ img {
 
 #features {
   text-align: center;
-  flex-direction: column;
   margin-top: 3rem;
 
   [data-tab-content] {
@@ -199,7 +206,6 @@ img {
 
 #extensions {
   text-align: center;
-  flex-direction: column;
   margin-top: 3rem;
 
   .extension {
@@ -234,7 +240,6 @@ img {
 
 #faq {
   text-align: center;
-  flex-direction: column;
   margin-top: 3rem;
 
   .faq-accordions {
@@ -295,7 +300,6 @@ img {
 
 #cpa {
   text-align: center;
-  flex-direction: column;
   margin-top: 3rem;
   background: $P-Soft-Blue;
   padding: 2rem 20px;
@@ -364,7 +368,6 @@ img {
 
 footer {
   background: $N-Very-Dark-Blue;
-  flex-direction: column;
   text-align: center;
   margin-top: 3rem;
 

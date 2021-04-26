@@ -18,6 +18,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -90,11 +94,20 @@ img {
   width: 100%;
 }
 
-#hero {
-  -webkit-box-orient: vertical;
+#navbar {
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (min-width: 768px) {
+  #navbar {
+    padding: 1rem 10%;
+  }
+}
+
+#hero {
   text-align: center;
   margin-top: 2rem;
 }
@@ -128,10 +141,6 @@ img {
 
 #features {
   text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin-top: 3rem;
 }
 
@@ -199,10 +208,6 @@ img {
 
 #extensions {
   text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin-top: 3rem;
 }
 
@@ -237,10 +242,6 @@ img {
 
 #faq {
   text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin-top: 3rem;
 }
 
@@ -302,10 +303,6 @@ img {
 
 #cpa {
   text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin-top: 3rem;
   background: #5368df;
   padding: 2rem 20px;
@@ -394,10 +391,6 @@ img {
 
 footer {
   background: #252b46;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   text-align: center;
   margin-top: 3rem;
 }
