@@ -101,9 +101,42 @@ img {
           flex-direction: row;
 }
 
+#navbar .nav {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   #navbar {
     padding: 1rem 10%;
+  }
+  #navbar .burger {
+    display: none;
+  }
+  #navbar .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+  }
+  #navbar .nav li {
+    margin-right: 2.5rem;
+  }
+  #navbar .nav li a {
+    color: #252b46;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  #navbar .nav li:last-child {
+    margin-right: 0;
+  }
+  #navbar .nav li:last-child a {
+    margin-top: 0;
+    padding: 0.8rem 2.3rem;
+    color: #FFF;
+    font-weight: 400;
   }
 }
 
