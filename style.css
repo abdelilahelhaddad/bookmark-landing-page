@@ -216,6 +216,55 @@ img {
   margin-top: 3rem;
 }
 
+@media screen and (min-width: 768px) {
+  #features > h1,
+  #features > p {
+    width: 50%;
+  }
+  #features .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #features .tab-content {
+    padding-right: 10%;
+    text-align: left;
+  }
+  #features .tab-content #bookmark.active,
+  #features .tab-content #search.active,
+  #features .tab-content #share.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #features .tab-content #bookmark.active .illustration-tab,
+  #features .tab-content #bookmark.active .hero-content,
+  #features .tab-content #search.active .illustration-tab,
+  #features .tab-content #search.active .hero-content,
+  #features .tab-content #share.active .illustration-tab,
+  #features .tab-content #share.active .hero-content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  #features .tab-content #bookmark.active .hero-content,
+  #features .tab-content #search.active .hero-content,
+  #features .tab-content #share.active .hero-content {
+    padding-left: 5rem;
+  }
+  #features .tab-content #bookmark.active .info-btn,
+  #features .tab-content #search.active .info-btn,
+  #features .tab-content #share.active .info-btn {
+    display: inline-block;
+  }
+}
+
 #features [data-tab-content] {
   display: none;
 }
@@ -242,6 +291,13 @@ img {
   border-top: 1px solid rgba(145, 148, 161, 0.2);
 }
 
+@media screen and (min-width: 768px) {
+  #features .tabs > li:first-child {
+    padding-top: 0;
+    border-top: none;
+  }
+}
+
 #features .tab::after {
   content: "";
   position: absolute;
@@ -255,6 +311,10 @@ img {
 
 #features .tab.active::after {
   background: #fa5757;
+}
+
+#features .tab-content .info-btn {
+  display: none;
 }
 
 #features .tab-content div {

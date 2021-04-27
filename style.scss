@@ -202,6 +202,44 @@ img {
   text-align: center;
   margin-top: 3rem;
 
+  @media screen and (min-width:768px) {
+
+    &>h1,
+    &>p {
+      width: 50%;
+    }
+
+    .tabs {
+      display: flex;
+      align-items: center;
+    }
+
+    .tab-content {
+      padding-right: 10%;
+      text-align: left;
+
+      #bookmark.active,
+      #search.active,
+      #share.active {
+        display: flex;
+        align-items: center;
+
+        .illustration-tab,
+        .hero-content {
+          flex: 1 1 100%;
+        }
+
+        .hero-content {
+          padding-left: 5rem;
+        }
+
+        .info-btn {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
   [data-tab-content] {
     display: none;
   }
@@ -226,6 +264,11 @@ img {
   .tabs>li:first-child {
     padding-top: 1rem;
     border-top: 1px solid rgba($N-Grayish-Blue, 0.2);
+
+    @media screen and (min-width:768px) {
+      padding-top: 0;
+      border-top: none;
+    }
   }
 
   .tab::after {
@@ -244,6 +287,9 @@ img {
   }
 
   .tab-content {
+    .info-btn {
+      display: none;
+    }
 
     div {
       position: relative;
