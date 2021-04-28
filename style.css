@@ -345,7 +345,7 @@ img {
 
 @media screen and (min-width: 768px) {
   #extensions {
-    margin-top: 8rem;
+    margin-top: 10rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -416,6 +416,7 @@ img {
 
 #faq .faq-accordions {
   margin-top: 3rem;
+  width: 95%;
 }
 
 #faq .faq-accordions .accordion {
@@ -434,7 +435,7 @@ img {
           align-items: center;
   text-align: left;
   cursor: pointer;
-  width: 335px;
+  width: 100%;
   padding-bottom: 1rem;
 }
 
@@ -464,6 +465,18 @@ img {
 #faq .faq-accordions .accordion.active .accordion-body {
   display: block;
   padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  #faq {
+    margin-top: 8rem;
+  }
+  #faq > p {
+    padding: 0 33%;
+  }
+  #faq .faq-accordions {
+    width: 45%;
+  }
 }
 
 #faq a {
