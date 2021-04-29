@@ -589,11 +589,10 @@ img {
 
     .logo-nav {
       display: flex;
-      justify-content: space-around;
       align-items: center;
 
       .logo {
-        margin: 0;
+        margin: 0 3rem 0 0;
       }
 
       .nav {
@@ -601,7 +600,11 @@ img {
         margin: 0;
 
         li {
-          margin: 0;
+          margin: 0 1.5rem 0 0;
+
+          a {
+            font-size: 14px;
+          }
         }
       }
     }

@@ -650,14 +650,12 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   #footer .logo-nav .logo {
-    margin: 0;
+    margin: 0 3rem 0 0;
   }
   #footer .logo-nav .nav {
     display: -webkit-box;
@@ -666,7 +664,10 @@ img {
     margin: 0;
   }
   #footer .logo-nav .nav li {
-    margin: 0;
+    margin: 0 1.5rem 0 0;
+  }
+  #footer .logo-nav .nav li a {
+    font-size: 14px;
   }
   #footer .socials {
     margin: 0;
