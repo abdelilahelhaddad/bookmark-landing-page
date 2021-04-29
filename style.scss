@@ -541,10 +541,9 @@ img {
   }
 }
 
-footer {
+#footer {
   background: $N-Very-Dark-Blue;
   text-align: center;
-  margin-top: 3rem;
 
   .logo-nav {
     .logo {
@@ -581,6 +580,38 @@ footer {
 
     img:first-child {
       margin-right: 2.5rem;
+    }
+  }
+
+  @media screen and (min-width:768px) {
+    flex-direction: row;
+    padding: 2rem 10%;
+
+    .logo-nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .logo {
+        margin: 0;
+      }
+
+      .nav {
+        display: flex;
+        margin: 0;
+
+        li {
+          margin: 0;
+        }
+      }
+    }
+
+    .socials {
+      margin: 0;
+
+      img {
+        width: auto;
+      }
     }
   }
 }
