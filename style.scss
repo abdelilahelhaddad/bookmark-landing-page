@@ -578,6 +578,10 @@ img {
     align-items: center;
     margin: 3rem 0 2rem 0;
 
+    img {
+      cursor: pointer;
+    }
+
     img:first-child {
       margin-right: 2.5rem;
     }
@@ -589,7 +593,6 @@ img {
 
     .logo-nav {
       display: flex;
-      align-items: center;
 
       .logo {
         margin: 0 3rem 0 0;
